@@ -954,7 +954,7 @@ a { text-decoration:none; color:inherit; }
 
 .info-content a {
     font-size: 0.9rem;
-    color: #000;
+    color: #ffffff;
     font-weight: 600;
     text-decoration: none;
     line-height: 1.6;
@@ -976,7 +976,7 @@ a { text-decoration:none; color:inherit; }
 
 .social-icon {
     background: rgba(255,255,255,0.18);
-    color: #000;
+    color: #ffffff;
     font-size: 0.82rem;
     font-weight: 700;
     padding: 7px 20px;
@@ -988,7 +988,7 @@ a { text-decoration:none; color:inherit; }
 
 .social-icon:hover {
     background: rgba(255,255,255,0.32);
-    color: #000;
+    color: #000000;
 }
 
 /* ============================================================
