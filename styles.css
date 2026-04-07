@@ -54,7 +54,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   NAVBAR
+NAVBAR
    ============================================================ */
 .navbar {
     background: linear-gradient(135deg, var(--pink) 0%, var(--pink-dark) 100%);
@@ -141,7 +141,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   HERO
+HERO
    ============================================================ */
 .hero {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, var(--navy-light) 100%);
@@ -193,7 +193,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   PAGE HEADER (inner pages)
+PAGE HEADER (inner pages)
    ============================================================ */
 .page-header {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
@@ -219,6 +219,46 @@ a { text-decoration:none; color:inherit; }
     background: linear-gradient(90deg, transparent, var(--pink), var(--pink-light), var(--pink), transparent);
 }
 
+/* Schedule table */
+.schedule-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+}
+
+.schedule-table th {
+    background: var(--off-white);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background: #f8f9fc;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+
 .page-header .container { position: relative; z-index: 1; }
 
 .page-header h2 {
@@ -235,7 +275,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   BUTTONS
+BUTTONS
    ============================================================ */
 .btn {
     display: inline-flex;
@@ -278,7 +318,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   FEATURES SECTION
+FEATURES SECTION
    ============================================================ */
 .features {
     background: var(--off-white);
@@ -341,7 +381,7 @@ a { text-decoration:none; color:inherit; }
 .feature-card p { color: var(--text-light); font-size: 0.93rem; line-height: 1.7; }
 
 /* ============================================================
-   CTA SECTION
+CTA SECTION
    ============================================================ */
 .cta {
     background: linear-gradient(135deg, var(--pink-dark) 0%, var(--pink) 100%);
@@ -365,7 +405,7 @@ a { text-decoration:none; color:inherit; }
 .cta p { font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.88; }
 
 /* ============================================================
-   CONTENT SECTIONS
+CONTENT SECTIONS
    ============================================================ */
 .content-section { padding: 80px 32px; }
 
@@ -394,7 +434,7 @@ a { text-decoration:none; color:inherit; }
 .content-image img { border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
 
 /* ============================================================
-   PROGRAM DETAILS
+PROGRAM DETAILS
    ============================================================ */
 .program-details {
     background: var(--off-white);
@@ -436,7 +476,7 @@ a { text-decoration:none; color:inherit; }
 .detail-item p { color: var(--text-mid); font-size: 0.93rem; line-height: 1.7; }
 
 /* ============================================================
-   OUTCOMES
+OUTCOMES
    ============================================================ */
 .outcomes-list { display: grid; gap: 1.25rem; }
 
@@ -465,7 +505,7 @@ a { text-decoration:none; color:inherit; }
 .outcome-content p  { color: var(--text-mid); font-size: 0.93rem; }
 
 /* ============================================================
-   PARTNERS / CAREER CARDS (used on about + sponsors)
+PARTNERS / CAREER CARDS (used on about + sponsors)
    ============================================================ */
 .partners-grid {
     display: grid;
@@ -511,7 +551,7 @@ a { text-decoration:none; color:inherit; }
 .partner-summary { color: var(--text-mid); font-size: 0.92rem; line-height: 1.7; }
 
 /* ============================================================
-   BENEFITS / ENROLLMENT STEPS
+BENEFITS / ENROLLMENT STEPS
    ============================================================ */
 .benefits-section {
     background: var(--off-white);
@@ -565,7 +605,7 @@ a { text-decoration:none; color:inherit; }
 .benefit-item p  { color: var(--text-mid); font-size: 0.92rem; line-height: 1.7; }
 
 /* ============================================================
-   REQUIREMENTS
+REQUIREMENTS
    ============================================================ */
 .requirements-list {
     display: grid;
@@ -624,7 +664,7 @@ a { text-decoration:none; color:inherit; }
 .sponsors-intro p { color: var(--text-mid); max-width: 700px; margin: 0 auto; line-height: 1.8; }
 
 /* ============================================================
-   GALLERY / PROJECTS
+GALLERY / PROJECTS
    ============================================================ */
 .projects-grid {
     display: grid;
@@ -708,7 +748,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   PARTNERS PAGE (big cards with images)
+PARTNERS PAGE (big cards with images)
    ============================================================ */
 .partners-section {
     padding: 80px 0;
@@ -820,7 +860,7 @@ a { text-decoration:none; color:inherit; }
 .partner-card-big:hover .partner-card-image-wrap img { transform: scale(1.04); }
 
 /* ============================================================
-   CONTACT SECTION (custom overrides)
+CONTACT SECTION (custom overrides)
    ============================================================ */
 .contact-section {
     padding: 80px 32px;
@@ -992,7 +1032,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   STATS
+STATS
    ============================================================ */
 .stats {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
@@ -1030,7 +1070,7 @@ a { text-decoration:none; color:inherit; }
 .stat-box p { font-size: 1rem; color: rgba(255,255,255,0.72); font-weight: 500; }
 
 /* ============================================================
-   FOOTER
+FOOTER
    ============================================================ */
 .footer {
     background: var(--navy);
@@ -1083,7 +1123,7 @@ a { text-decoration:none; color:inherit; }
 }
 
 /* ============================================================
-   SCROLL TO TOP BUTTON
+SCROLL TO TOP BUTTON
    ============================================================ */
 #scrollTopBtn {
     position: fixed;
@@ -1106,7 +1146,7 @@ a { text-decoration:none; color:inherit; }
 #scrollTopBtn:hover { transform: scale(1.1) translateY(-2px); }
 
 /* ============================================================
-   RESPONSIVE
+RESPONSIVE
    ============================================================ */
 @media (max-width: 900px) {
     .content-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
