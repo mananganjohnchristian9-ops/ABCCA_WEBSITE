@@ -1169,7 +1169,8 @@ RESPONSIVE
 
     .logo-left img:first-child { width: 120px; }
     .logo-left img:last-child  { width: 48px; }
-    .logo-right img            { width: 80px; }
+    .logo-right img:first-child { width: 48px; }
+    .logo-right img:last-child  { width: 120px; }
     .site-title                { font-size: 0.82rem; }
 
     .hero { padding: 72px 20px; min-height: 380px; }
