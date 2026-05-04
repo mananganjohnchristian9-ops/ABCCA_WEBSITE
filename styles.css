@@ -110,8 +110,8 @@ NAVBAR
     gap: 16px;
     flex-shrink: 0;
 }
-   .logo-right img:first-child { width: 160px; height: auto; }
-   .logo-right img:last-child  { width: 60px;  height: auto; }
+   .logo-right img:first-child { width: 60px; height: auto; }
+   .logo-right img:last-child  { width: 160px;  height: auto; }
 
 
 /* Nav menu */
