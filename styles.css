@@ -105,6 +105,9 @@ NAVBAR
 }
 
 .logo-right img { width: 120px; height: auto; flex-shrink: 0; }
+   .logo-right img:first-child { width: 160px; height: auto; }
+   .logo-right img:last-child  { width: 60px;  height: auto; }
+
 
 /* Nav menu */
 .nav-menu-left {
