@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enrollment Requirements - ABCCA Training School</title>
+    <title>Gallery - ABCCA Training School</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-image-pair {
+            display: flex;
+            gap: 6px;
+            overflow: hidden;
+            background: var(--off-white);
+        }
+        .project-image-pair img {
+            width: 50%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .project-card:hover .project-image-pair img { transform: scale(1.04); }
+        .project-image-single img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .project-card:hover .project-image-single img { transform: scale(1.04); }
+        .project-body { padding: 1.5rem; }
+        .project-body h4 { color: var(--navy); font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+        .project-body .project-category { color: var(--pink); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: 0.6rem; }
+        .project-body .project-description { color: var(--text-mid); font-size: 0.91rem; line-height: 1.7; margin-bottom: 1rem; }
+        .project-body .project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        /* Override projects-grid for this page */
+        .projects-grid .project-card { padding: 0; }
+    </style>
 </head>
 <body>
 
@@ -23,8 +52,8 @@
             <ul class="nav-menu-left" id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Gallery</a></li>
-                <li><a href="sponsors.html" class="active">Requirements</a></li>
+                <li><a href="projects.html" class="active">Gallery</a></li>
+                <li><a href="sponsors.html">Requirements</a></li>
                 <li><a href="partners.html">Partners</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -35,158 +64,100 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h2>Enrollment Requirements</h2>
-                <p>Everything you need to know before enrolling in our SMAW training program</p>
+                <h2>Training School Gallery</h2>
+                <p>Showcasing our admin room, training room, library, classroom, and comfort facilities</p>
             </div>
         </section>
 
-        <!-- Intro -->
         <section class="content-section">
             <div class="container">
-                <div class="sponsors-intro">
-                    <h3>Eligibility & Requirements</h3>
-                    <p>To enroll in our SMAW NC I or NC II training program, please make sure you meet all the basic eligibility requirements below. We're committed to providing quality, free training to motivated individuals ready to pursue a professional welding career.</p>
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <div class="project-image-pair">
+                            <img src="pictures/Admin.jpg" alt="Admin Room">
+                            <img src="pictures/AdminRoom.jpg" alt="Admin Room Interior">
+                        </div>
+                        <div class="project-body">
+                            <h4>Admin Room</h4>
+                            <span class="project-category">Administrative</span>
+                            <p class="project-description">Our administrative office with modern facilities for registration, inquiries, and enrollment processing.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Registration</span>
+                                <span class="tech-tag">Enrollment</span>
+                                <span class="tech-tag">Inquiries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-pair">
+                            <img src="pictures/Trainingroom-Out.jpg" alt="Training Room Outside">
+                            <img src="pictures/Trainingroom-in.jpg" alt="Training Room Inside">
+                        </div>
+                        <div class="project-body">
+                            <h4>Training Room</h4>
+                            <span class="project-category">Training Facilities</span>
+                            <p class="project-description">State-of-the-art welding training facility equipped with SMAW and all necessary tools for hands-on learning.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">SMAW</span>
+                                <span class="tech-tag">Equipment</span>
+                                <span class="tech-tag">Practical</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-pair">
+                            <img src="pictures/Library.jpg" alt="Library">
+                            <img src="pictures/LibraryRoom.jpg" alt="Library Room">
+                        </div>
+                        <div class="project-body">
+                            <h4>Library</h4>
+                            <span class="project-category">Learning Resources</span>
+                            <p class="project-description">Comprehensive reference materials, technical manuals, and welding standards for student research and study.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">References</span>
+                                <span class="tech-tag">Manuals</span>
+                                <span class="tech-tag">Resources</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-pair">
+                            <img src="pictures/UpstairClassroom.jpg" alt="Classroom">
+                            <img src="pictures/UpstairClassroom2.jpg" alt="Classroom 2">
+                        </div>
+                        <div class="project-body">
+                            <h4>Classroom</h4>
+                            <span class="project-category">Academic Space</span>
+                            <p class="project-description">Modern classroom with comfortable seating, audio-visual equipment, and whiteboards for theoretical instruction.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Modern</span>
+                                <span class="tech-tag">Well-Equipped</span>
+                                <span class="tech-tag">Comfortable</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-single">
+                            <img src="pictures/Comfort_Facilities.jpg" alt="Comfort Facilities">
+                        </div>
+                        <div class="project-body">
+                            <h4>Comfort Facilities</h4>
+                            <span class="project-category">Student Amenities</span>
+                            <p class="project-description">Clean and well-maintained comfort rooms equipped with proper sanitation, ensuring hygiene and convenience for trainees throughout the day.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Comfort Room</span>
+                                <span class="tech-tag">Sanitation</span>
+                                <span class="tech-tag">Hygiene</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
-                <h3 style="margin-bottom:1.5rem;">Basic Entry Requirements</h3>
-                <p style="color:var(--text-mid); margin-bottom:1.5rem;">Trainees or students who wish to enroll must possess the following basic entry requirements:</p>
-                <div class="requirements-list">
-                    <div class="requirement-item">
-                        <span class="requirement-check">✓</span>
-                        <span>Can communicate either orally or in written form</span>
-                    </div>
-                    <div class="requirement-item">
-                        <span class="requirement-check">✓</span>
-                        <span>Physically and mentally fit</span>
-                    </div>
-                    <div class="requirement-item">
-                        <span class="requirement-check">✓</span>
-                        <span>With good moral character</span>
-                    </div>
-                    <div class="requirement-item">
-                        <span class="requirement-check">✓</span>
-                        <span>Can perform basic mathematical computation</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Documentary Requirements -->
-        <section class="content-section" style="background:var(--off-white); padding-top:0;">
-            <div class="container">
-                <h3 style="margin-bottom:2rem; padding-top:80px;">Additional Documentary Requirements</h3>
-                <div class="partners-grid">
-                    <div class="partner-card">
-                        <span class="partner-logo">📄</span>
-                        <h4>High School Report Card</h4>
-                        <span class="partner-industry">Form 138 / SF-9 (Photocopy)</span>
-                        <p class="partner-summary">High school report card or proof of last school attended. Required for academic verification.</p>
-                    </div>
-                    <div class="partner-card">
-                        <span class="partner-logo">🎓</span>
-                        <h4>Learner's Permanent School Record</h4>
-                        <span class="partner-industry">Form 137 / SF-10 (Photocopy)</span>
-                        <p class="partner-summary">Permanent school record or proof of last school attended. Official academic document.</p>
-                    </div>
-                    <div class="partner-card">
-                        <span class="partner-logo">✅</span>
-                        <h4>Certificate of Good Moral Character</h4>
-                        <span class="partner-industry">Character Reference (Photocopy)</span>
-                        <p class="partner-summary">Certificate of good moral character or barangay clearance. Required for character verification.</p>
-                    </div>
-                    <div class="partner-card">
-                        <span class="partner-logo">👶</span>
-                        <h4>PSA Birth Certificate</h4>
-                        <span class="partner-industry">Birth Certificate (Photocopy)</span>
-                        <p class="partner-summary">Philippine Statistics Authority birth certificate. Required for identity verification.</p>
-                    </div>
-                    <div class="partner-card">
-                        <span class="partner-logo">📸</span>
-                        <h4>ID Photos (2×2)</h4>
-                        <span class="partner-industry">Identification Photos</span>
-                        <p class="partner-summary">Four (4) pieces of 2×2 ID photos — recent, with collar, white background.</p>
-                    </div>
-                    <div class="partner-card">
-                        <span class="partner-logo">🖼️</span>
-                        <h4>Passport Size Photos</h4>
-                        <span class="partner-industry">Additional Photos</span>
-                        <p class="partner-summary">Four (4) pieces of passport size photos — recent, with collar, white background.</p>
-                    </div>
-                    <div class="partner-card">
-                        <span class="partner-logo">✉️</span>
-                        <h4>Long Brown Envelope</h4>
-                        <span class="partner-industry">Document Container</span>
-                        <p class="partner-summary">One long brown envelope for storing and submitting all required documents together.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Enrollment Steps -->
-        <section class="benefits-section">
-            <div class="container">
-                <h3>Enrollment Process — Step by Step</h3>
-                <div class="benefits-list">
-                    <div class="benefit-item">
-                        <div class="benefit-number">01</div>
-                        <h4>Submit Requirements</h4>
-                        <p>Gather and submit all required documents: ID, birth certificate, photos, school records, and character reference.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-number">02</div>
-                        <h4>Fill Out Application</h4>
-                        <p>Complete the enrollment application form with accurate personal information and select your preferred program level (NC I or NC II).</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-number">03</div>
-                        <h4>Attend Orientation</h4>
-                        <p>Participate in a mandatory orientation session covering program structure, safety protocols, and a facility tour.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-number">04</div>
-                        <h4>Start Training</h4>
-                        <p>Begin your SMAW welding journey with expert instruction and hands-on practice in our fully equipped training facility.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Class Schedule and Deadlines -->
-        <section class="content-section" style="background:var(--off-white);">
-            <div class="container">
-                <h3>Class Schedule & Submission Deadlines</h3>
-                <p style="margin-bottom:0.5rem; color:var(--text-mid);">Monitor your program dates and document deadlines to ensure a smooth enrollment experience.</p>
-                <p style="margin-bottom:1.25rem; font-size:1.05rem; font-weight:700; color:#c0315f;">📌 Highlight: Batch 3 starts on April 6, 2026 (Mon–Fri).</p>
-                <div class="schedule-table-wrap">
-                    <table class="schedule-table">
-                        <thead>
-                            <tr>
-                                <th>Class</th>
-                                <th>Schedule</th>
-                                <th>Location</th>
-                                <th>Document Submission Deadline</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>SMAW NC I (Batch 1)</td>
-                                <td>Mon - Fri
-                                    <ul style="margin:0.25rem 0 0 1.15rem; padding-left: 0.8rem; color: var(--text-mid);">
-                                        <li><strong>Morning shift:</strong> 7:00 AM – 12:00 NN</li>
-                                        <li><strong>Afternoon shift:</strong> 1:00 PM – 3:00 PM</li>
-                                    </ul>
-                                    <strong>Starts:</strong> <span style="color:#c0315f;">April 6, 2026</span>
-                                </td>
-                <p style="margin-top:1rem; font-size:0.95rem;">*Dates may change. Please confirm with admissions at <a href="contact.html">contact page</a>.</p>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta">
-            <div class="container">
-                <h2>Ready to Enroll?</h2>
-                <p>Contact our admissions team to start your welding career journey today — at no cost.</p>
-                <a href="contact.html" class="btn btn-secondary">Get Started Now</a>
             </div>
         </section>
     </main>
